@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="../css/place-me.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/place-me.js"></script>
+	</head>
+	<body ng-controller="place-me">
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>关于我们</p>
+		</header>
+		<section class="cw-sec">
+			<ul>
+				<li ng-repeat="value in placeme"><a href="javascript:;"><span>{{value.title}}</span></a></li>
+			</ul>
+			<p>《滴滴租赁软件可及服务协议》和《滴滴隐私政策》</p>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+{
+"lead":[
+	{"image":"../images/global/lead1_03.jpg","title":"各种相机,任你挑选"},
+	{"image":"../images/global/lead2_03.jpg","title":"同城租赁 方便快捷"},
+	{"image":"../images/global/lead3_03.jpg","title":"实名认证 安全可靠"}
+],
+"banner":[
+	{"image":"../images/global/home page_04.jpg"},
+	{"image":"../images/global/home page_04.jpg"},
+	{"image":"../images/global/home page_04.jpg"},
+	{"image":"../images/global/home page_04.jpg"}
+],
+"content":[
+	{"tit":"使用时间","title":"选择档期"},
+	{"tit":"归还时间","title":"选择档期"}
+],
+"list":[
+	{"image":"../images/global/home page_05.jpg","id":"佳能5D（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_06.jpg","id":"索尼A7（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_07.jpg","id":"莱卡伯德（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"宾得K-1（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"富士GFX50S（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"尼康D810（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"理光（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"松下（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"徐来（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"莱卡博德-5S（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"莱卡博德-5Plus（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"},
+	{"image":"../images/global/home page_08.jpg","id":"尼康D811（Leica）Sofort 莱卡拍立得","juli":"1.5km","money":"100"}
+]
+,"submenu":[
+	{"title":"佳能5D"},
+	{"title":"索尼A7"},
+	{"title":"莱卡伯德"},
+	{"title":"宾得K-1"},
+	{"title":"富士GFX50S"},
+	{"title":"尼康D810"},
+	{"title":"理光"},
+	{"title":"松下"},
+	{"title":"徐来"},
+	{"title":"莱卡伯德"},
+	{"title":"莱卡伯德"},
+	{"title":"尼康D810"}
+],
+"map":[
+	{"toponymy":"山西"},
+	{"toponymy":"北京"}
+],
+"tabs":[
+	{"title":"全部"},
+	{"title":"待付款"},
+	{"title":"待发货"},
+	{"title":"已发货"},
+	{"title":"待评论"}
+],
+"indent":[
+	{"id":"阔爱的小仙女","title":"全部","status":"待付款","image":"../images/global/indent_01.jpg","march":"佳能（Canon）EOS 80D 单反套机（EF-S 18-135mm f/3.5-5.6 IS USM镜头 ","time":"06-01 ~ 06.15","price":"90","money":"950"},
+	{"id":"阔爱的小仙女","title":"全部","status":"待发货","image":"../images/global/indent_02.jpg","march":"佳能（Canon）EOS 80D 单反套机（EF-S 18-135mm f/3.5-5.6 IS USM镜头 ","time":"06-01 ~ 06.15","price":"90","money":"950"},
+	{"id":"阔爱的小仙女","title":"全部","status":"已发货","image":"../images/global/indent_03.jpg","march":"佳能（Canon）EOS 80D 单反套机（EF-S 18-135mm f/3.5-5.6 IS USM镜头 ","time":"06-01 ~ 06.15","price":"90","money":"950"},
+	{"id":"阔爱的小仙女","title":"全部","status":"待评论","image":"../images/global/indent_03.jpg","march":"佳能（Canon）EOS 80D 单反套机（EF-S 18-135mm f/3.5-5.6 IS USM镜头 ","time":"06-01 ~ 06.15","price":"90","money":"950"}
+],
+"tit":[
+	{"image":"../images/global/mine_06.jpg","title":"发布设备"},
+	{"image":"../images/global/mine_05.jpg","title":"我的设备"},
+	{"image":"../images/global/mine_03.jpg","title":"出租订单"},
+	{"image":"../images/global/mine_04.jpg","title":"我的收入"}
+],
+"service":[
+	{"image":"../images/global/mine_07.jpg","title":"银行卡","msg":"0"},
+	{"image":"../images/global/mine_08.jpg","title":"购物车","msg":"0"},
+	{"image":"../images/global/mine_09.jpg","title":"收藏","msg":"0"},
+	{"image":"../images/global/mine_10.jpg","title":"常见问题","msg":"0"},
+	{"image":"../images/global/mine_11.jpg","title":"关于我们","msg":"0"}
+],
+"rent":[
+	{"image":"../images/global/rent-out_02.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3","price":"100"},
+	{"image":"../images/global/rent-out_03.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3","price":"100"},
+	{"image":"../images/global/rent-out_04.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3","price":"100"}
+],
+"tits":[
+	{"history":"历史总收入","data":"0"},
+	{"history":"历史总提现","data":"0"},
+	{"history":"预计将收入","data":"0"},
+	{"history":"正在提现中","data":"0"},
+	{"history":"可提现金额","data":"0"}
+],
+"lis":[
+	{"title":"昵称","minute":"18811213306"},
+	{"title":"手机号","minute":"18811213306"},
+	{"title":"绑定QQ","minute":"1488456846@qq.com"},
+	{"title":"邮箱","minute":""},
+	{"title":"我的归还日期","minute":""},
+	{"title":"行业","minute":""}
+],
+"placeme":[
+	{"title":"功能介绍"},
+	{"title":"投诉"},
+	{"title":"检查新版本"}
+],
+"collect":[
+	{"image":"../images/global/rent-out_05.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3.6","price":"100"},
+	{"image":"../images/global/rent-out_06.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3.6","price":"100"},
+	{"image":"../images/global/rent-out_03.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3.6","price":"100"},
+	{"image":"../images/global/rent-out_04.jpg","title":"佳能（Canon） EOS 700D 单反套机 （EF-S 18-135mm f/3.5-5.6 IS STM镜头）","time":"3.6","price":"100"}
+],
+"set":[
+	{"title":"新消息提醒","state":""},
+	{"title":"勿忘模式","state":""},
+	{"title":"隐私","state":""},
+	{"title":"账号与安全","state":"已保护"}
+],
+"st":[
+	{"title":"帮助与反馈","state":""},
+	{"title":"退出","state":""}
+],
+"shop":[
+	{"image":"../images/global/shop_01.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"},
+	{"image":"../images/global/shop_02.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"},
+	{"image":"../images/global/shop_03.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"}
+],
+"details":[
+	{"mouse":"2017年5月23日—2017年5月27日","days":"4","image":"../images/global/details_02.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"},
+	{"mouse":"2017年5月23日—2017年5月27日","days":"4","image":"../images/global/details_02.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"},
+	{"mouse":"2017年5月23日—2017年5月27日","days":"4","image":"../images/global/details_02.jpg","title":"索尼单反面镜头摄影","price":"49.99","time":"2017/8/09-2017/8/15","day":"6","money":"190"}
+],
+"msg":[
+	{"title":"78585s555fzd"},
+	{"title":"发货后即显示归还地址"}
+],
+"msgs":[
+	{"title":"78585s555fzd"},
+	{"title":"北京市昌平区马池口镇吉利大学"}
+],
+"surrender":[
+	{"money":"5000","msg":"注：为确保相机的安全使用，需缴纳押金，相机归还后可随时退回付款账户，谢谢您的合作。","way":"支付宝","image":"../images/global/surrender_01.jpg","pay":"确认支付"}
+],
+"camera":[
+	{"image":"../images/global/camera_01.jpg"},
+	{"image":"../images/global/camera_01.jpg"},
+	{"image":"../images/global/camera_01.jpg"},
+	{"image":"../images/global/camera_01.jpg"}
+],
+"describe":[
+	{"id":"商品：佳能（Canon）PowerShot SX720 HS 数码相机（2030万像素 40倍光变 24mm超广角）黑色","distance":"2","message":"现在下单预计明天送达","price":"98","grade":"5.0","person":"22"}
+],
+"appraise":[
+	{"title":"相机样式","minute":"5.0"},
+	{"title":"描述相符","minute":"5.0"},
+	{"title":"相机新度","minute":"5.0"},
+	{"title":"好评率","minute":"100%"}
+],
+"comment":[
+	{"image":"../images/global/camera_04.jpg","id":"阔爱的小仙女","days":"一天前","title":"相机很好用。"},
+	{"image":"../images/global/camera_04.jpg","id":"阔爱的小仙女","days":"一天前","title":"相机很好用。"},
+	{"image":"../images/global/camera_04.jpg","id":"阔爱的小仙女","days":"一天前","title":"相机很好用。"}
+],
+"news":[
+	{"image":"../images/global/news_01.png","content":"交易物流消息","title":"您租赁的相机已发货，请注意查收。","time":"15:30"},
+	{"image":"../images/global/news_02.png","content":"通知消息","title":"您的相机还有两天即将到期，请注意及时返还。","time":"15:30"},
+	{"image":"../images/global/news_03.png","content":"十年 TEN","title":"亲，我的这款相机目前是最新款的，单反，拍照像···","time":"15:30"},
+	{"image":"../images/global/news_04.png","content":"世界那么大","title":"亲，有什么要问的吗","time":"15:30"},
+	{"image":"../images/global/news_05.png","content":"悲伤辣么大","title":"在很久很久以前，巴拉巴拉","time":"15:30"},
+	{"image":"../images/global/news_06.png","content":"隔壁村的李小妞","title":"欧模式罗伊，的后你墨刀韩国独立。","time":"15:30"},
+	{"image":"../images/global/news_07.png","content":"鯨落","title":"围观优美，手感更好","time":"15:30"}
+],
+"nearby":[
+	{"image":"../images/global/neardy_03.png","title":"制定完美的旅游心情","distance":"3.6","price":"100"},
+	{"image":"../images/global/neardy_04.png","title":"制定完美的旅游心情","distance":"3.6","price":"100"},
+	{"image":"../images/global/neardy_05.png","title":"制定完美的旅游心情","distance":"3.6","price":"100"}
+]
+}

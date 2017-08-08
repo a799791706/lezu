@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/libs/swiper.min.css"/>
+		<link rel="stylesheet" href="../css/lead.css"/>
+		<script src="../js/libs/swiper.min.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/lead.js"></script>
+	</head>
+	<body ng-controller="lead">
+		<div class="swiper-container cw-sw1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" ng-repeat="value in datas"><p data-swiper-parallax="-500">{{value.title}}</p><img src="{{value.image}}" alt="" /><button><a href="homepage.html">立即进入</a></button></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</body>
+</html>

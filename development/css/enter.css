@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 14px; }
+
+@font-face {
+  font-family: "font";
+  src: url(../ttf/IcoMoon-Free.ttf); }
+.icon {
+  font-family: "font"; }
+
+.icon-add:before {
+  content: "\ea0a"; }
+
+header {
+  width: 20rem;
+  height: calc(90px /2);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  background: white;
+  border-bottom: 1px solid #EEEEEE; }
+  header > a:nth-child(1) {
+    margin-left: 10px;
+    height: calc(46px /2);
+    z-index: 10; }
+    header > a:nth-child(1) > img {
+      width: calc(30px /2); }
+  header > p:nth-child(2) {
+    position: absolute;
+    width: 20rem;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px; }
+
+section > form:nth-child(1) {
+  width: calc(500px /2);
+  height: calc(350px /2);
+  margin: 0 auto;
+  margin-top: calc(116px /2); }
+  section > form:nth-child(1) > p:nth-child(4) {
+    margin-top: calc(150px /2); }
+    section > form:nth-child(1) > p:nth-child(4) > input {
+      display: block;
+      background: #363636;
+      color: white;
+      width: 100%;
+      height: calc(72px /2);
+      line-height: calc(72px /2);
+      overflow: hidden;
+      text-align: Center;
+      border-radius: 5px; }
+  section > form:nth-child(1) > p:nth-child(1) > a {
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    width: 64px;
+    height: 24px;
+    background: #999999;
+    font-size: 10px;
+    color: white; }
+  section > form:nth-child(1) > p {
+    position: relative;
+    height: calc(118px /2 - 25px);
+    border-bottom: 1px solid #A1A1A1;
+    display: flex;
+    align-items: center;
+    padding-top: 25px; }
+    section > form:nth-child(1) > p > label:nth-child(1) > img {
+      width: calc(30px /2);
+      height: calc(40px /2); }
+    section > form:nth-child(1) > p > input:nth-child(2) {
+      margin-left: 20px;
+      color: #999999;
+      font-size: 13px;
+      outline: none;
+      border: none;
+      z-index: 10; }
+    section > form:nth-child(1) > p > span:nth-child(3) {
+      width: 200px;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      color: #999999;
+      font-size: 14px; }
+
+/*# sourceMappingURL=enter.css.map */

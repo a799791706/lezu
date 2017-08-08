@@ -1,0 +1,67 @@
+$(function(){
+	$('#form').validate({
+		rules:{
+			phone:{required:true,rangelength:[10,11]},
+			passwords:{required:true,rangelength:[6,10]}
+		},
+		messages:{
+			phone:{required:"请输入您的手机号",rangelength:"手机号码格式不对"},
+			passwords:{required:"密码在6-10位之间",rangelength:"密码长度不对"}
+		},
+		focusInvalid:true,
+		focusCleanup:true,
+		errorElement:"span",
+		submitHandler:function(){
+			//ajax登录
+			ajax({
+				url:'../php/user.php',
+				data:{
+					act:'lgn',
+					user:$('#phone').val(),
+					pass:$('#password').val()
+				},
+				success:function(res){
+					var json=eval('('+res+')');
+					alert(json.msg)
+					if(json.msg!="登录成功"){
+						return false;
+					}else{
+						setInterval(function(){
+							location.href="mine.html";
+						},1000/60)
+					}
+				},
+				error:function(s){
+					console.log(s);
+				}
+			})
+		},
+		invalidHandler:function(){
+			alert('请输入正确的用户信息');
+		},
+	});
+	//
+	$('#form p').children('input').on('blur',function(){
+		if($('.error').eq($(this).index()).text()!=""){
+			$(this).animate({
+				marginBottom:"50px"
+			},500,function(){
+				$('.error').eq($(this).index()).css('color','red')
+			})
+		}
+		else{
+			$('.error').eq($(this).index()).css('color','green')
+		}
+	})
+	//
+	$('#form p').children('input').on('focus',function(){
+		if($('.error').eq($(this).index()).text()==""){
+			$(this).animate({
+				marginBottom:"0px"
+			},500)
+		}
+		else{
+			console.log('a')
+		}
+	})
+})

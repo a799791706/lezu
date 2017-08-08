@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>附近的服务</title>
+		<link rel="stylesheet" href="../css/nearby.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/nearby.js"></script>
+	</head>
+	<body ng-controller="nearby">
+		<header>
+			<a href="homepage.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>附近的服务</p><a href="javascript:;"><img src="../images/global/neardy_01.png" alt="" /></a>
+		</header>
+		<!--地理图-->
+		<nav>
+			<img src="../images/global/neardy_02.png" alt="" />
+		</nav>
+		<section>
+			<ul>
+				<li ng-repeat="value in nearbys">
+					<div>
+						<img src="{{value.image}}" alt="" />
+						<div>
+							<p>{{value.title}}</p>
+							<p>距离:<span>{{value.distance}}km</span></p>
+							<p>价格:<span>{{value.price|currency:"￥"}}</span>/天</p>
+						</div>
+						<div>
+							<a href="javascript:;">立即租赁</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</body> 
+</html>

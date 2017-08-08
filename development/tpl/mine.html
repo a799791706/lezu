@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" href="../css/mine.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/mine.js"></script>
+	</head>
+	<body ng-controller="mine">
+		<header>
+			<a href="set.html" class="icon icon-set"></a>
+			<div>
+				<a href="message.html"><img src="../images/global/mine_02.jpg" alt="" /></a>
+				<div><p><span>婆婆</span><span>♀</span></p><a href="javascript:;">这个用户很懒，还没有个签哦</a></div>
+			</div>
+			<a href="activate.html">额度激活</a>
+		</header>
+		<section>
+			<ul>
+				<li ng-repeat="value in tits" ng-click="click($index)"><a href="{{now}}"><div><img src="{{value.image}}" alt="" /></div><p>{{value.title}}</p><div></div></a></li>
+			</ul>
+			<ul>
+				<li ng-repeat="value in services"  ng-click="click2($index)"><a href="{{now2}}"><img src="{{value.image}}" alt="" /><span>{{value.title}}</span><span>{{value.msg}}</span><img src="../images/global/activate_01.jpg" alt="" /></a></li>
+			</ul>
+		</section>
+		<footer>
+			<ul class="cw-uls">
+				<li><a href="homepage.html" class="cw-a">
+					<img src="../images/global/hot_01.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">乐租</p>
+				</a></li>
+				<li><a href="indent.html" class="cw-a">
+					<img src="../images/global/hot_02.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">订单</p>
+				</a></li> 
+				<li><a href="mine.html" class="cw-a">
+					<img src="../images/global/hot_03.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">我</p>
+				</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

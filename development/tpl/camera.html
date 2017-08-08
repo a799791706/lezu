@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>相机详情</title> 
+		<link rel="stylesheet" type="text/css" href="../css/libs/swiper.min.css"/>
+		<link rel="stylesheet" href="../css/camera.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/swiper.min.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/camera.js"></script>
+	</head>
+	<body ng-controller="camera">
+		<header>
+			<!--浏览图-->
+			<div class="swiper-container cw-banner">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" ng-repeat="value in images"><img src="{{value.image}}" alt="" /></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--功能区-->
+			<div>
+				<a href="homepage.html"><img src="../images/global/camera_06.png" alt="" /></a>
+				<div>
+					<a href="shop.html"><img src="../images/global/camera_07.png" alt="" /></a>
+					<a href="javascript:;"><img src="../images/global/camera_08.png" alt="" /></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div ng-repeat="value in describe">
+				<ul>
+					<li>{{value.id}}</li>
+					<li><span>距离：{{value.distance}}km</span><span>{{value.message}}</span></li>
+					<li>价格：<span>{{value.price}}<span>元/天</span></span></li>
+				</ul>
+				<ul>
+					<li><span>{{value.grade}}<span>分评分</span></span><span>{{value.person}}<span>人租过</span></span></li>
+					<li>
+						<span ng-repeat="value in appraise"><span>{{value.title}}</span><span>{{value.minute}}</span></span>
+					</li>
+				</ul>
+			</div>
+			<div class="cw-content">
+				<ul>
+					<li ng-repeat="value in comments">
+						<div><img src="{{value.image}}" alt="" /></div>
+						<div>
+							<p>{{value.id}}</p>
+							<p>{{value.title}}</p>
+						</div>
+						<span>{{value.days}}</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--提示信息-->
+		<div class="cw-msg">
+			<div>
+				<img src="../images/global/camera_05.png" alt="" />
+				<div>租用成功</div>
+				<div>
+					<a href="javascript:;" class="cw-shop">取消</a>
+					<a href="indent.html" class="cw-shop">查看订单</a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<ul class="cw-uls">
+				<li>
+					<a href="news.html" class="cw-a">
+						<img src="../images/global/camera_02.jpg" alt="" class="cw-img"/>
+						<p class="cw-title">联系主人</p>
+					</a>
+					<a href="" class="cw-a">
+						<img src="../images/global/camera_03.jpg" alt="" class="cw-img"/>
+						<p class="cw-title">收藏</p>
+					</a>
+				</li>
+				<li>
+					<a href="shop.html" class="cw-a">
+						<p class="cw-title">加入购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="cw-a">
+						<p class="cw-title">立即租用</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

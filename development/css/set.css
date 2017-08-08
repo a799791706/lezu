@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 14px;
+  background: #F5F5F5; }
+
+header {
+  width: 20rem;
+  height: calc(90px /2);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  background: white; }
+  header > a:nth-child(1) {
+    display: block;
+    margin-left: 10px;
+    z-index: 10; }
+    header > a:nth-child(1) > img {
+      height: calc(28px /2);
+      width: calc(15px /2); }
+  header > p:nth-child(2) {
+    position: absolute;
+    width: 20rem;
+    text-align: center;
+    z-index: 1; }
+
+section > ul:nth-child(1) > li {
+  background: white; }
+  section > ul:nth-child(1) > li > a {
+    margin: 0 10px;
+    display: block;
+    height: calc(96px /2);
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center; }
+    section > ul:nth-child(1) > li > a > span {
+      color: #033333;
+      font-size: 14px; }
+    section > ul:nth-child(1) > li > a > span:nth-child(2) {
+      flex: 1;
+      text-align: right;
+      margin-right: 15px; }
+      section > ul:nth-child(1) > li > a > span:nth-child(2) > img {
+        width: calc(32px /2);
+        height: calc(32px /2); }
+section > ul:nth-child(1) > li:nth-child(4) > a {
+  border-bottom: none; }
+section > ul:nth-child(2) {
+  margin-top: 12px; }
+  section > ul:nth-child(2) > li {
+    background: white; }
+    section > ul:nth-child(2) > li > a {
+      margin: 0 10px;
+      display: block;
+      height: calc(96px /2);
+      border-bottom: 1px solid #E0E0E0;
+      display: flex;
+      align-items: center; }
+      section > ul:nth-child(2) > li > a > span {
+        color: #033333;
+        font-size: 14px; }
+
+/*# sourceMappingURL=set.css.map */

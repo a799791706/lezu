@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/shop.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/shop.js"></script>
+	</head>
+	<body ng-controller="shop">
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>购物车</p><a href="javascript:;" class="cw-bj">编辑</a>
+		</header>
+		<section class="cw-sec">
+			<ul>
+				<li ng-repeat="value in shops">
+					<a href="javascript:;" class="cw-div"></a>
+					<img src="{{value.image}}" alt="" />
+					<div>
+						<p>{{value.title}}</p>
+						<p>价格:{{value.price|currency:"￥"}}/天</p>
+						<p>租期:{{value.time}}</p>
+						<p>日期:<span>{{value.day}}天</span></p>
+						<p>共计<span>{{value.money}}元</span></p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<ul class="cw-uls">
+				<li class="cw-btn"><a href="javascript:;">全选</a></li>
+				<li class="cw-btn"><a href="javascript:;">删除</a></li>
+				<li class="cw-btn"><a href="surrender.html">一键租赁</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

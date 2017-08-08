@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>出租订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/rent-out.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/rent-out.js"></script>
+	</head>
+	<body ng-controller="rent">
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>出租订单</p>
+		</header>
+		<section class="cw-sec">
+			<ul>
+				<li ng-repeat="value in rents">
+					<img src="{{value.image}}" alt="" />
+					<div>
+						<p>{{value.title}}</p>
+						<p>租期:{{value.time}}天</p>
+						<p>价格:<span>{{value.price|currency:"￥"}}</span>/天</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

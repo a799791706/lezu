@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration: none;
+    font-family:"Microsoft YaHei";
+}
+html{
+    font-size:14px;
+}
+header{
+    width:20rem;
+    height:calc(90px /2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:18px;
+    color:#333333;
+    border-bottom:1px solid #e5e5e5;
+    position:relative;
+    background: white;
+    >a:nth-child(1){
+        margin-left:10px;
+        height:calc(46px /2);
+        z-index:10;
+        >img{
+            width:calc(30px /2);
+        } 
+    }
+    >p:nth-child(2){
+        position:absolute;
+        width:20rem;
+        text-align:center;
+        z-index:1;
+    }
+    >a:nth-child(3){
+        display:block;
+        z-index:11;
+        margin-left:14rem;
+        width:calc(46px /2);
+        height:calc(46px /2);
+        >img{
+            width:calc(46px /2);
+            height:calc(46px /2);
+        }
+    }
+    >a:nth-child(4){
+        display:block;
+        z-index:12;
+        margin-right:11px;
+        width:calc(46px /2);
+        height:calc(46px /2);
+        >img{
+            width:calc(46px /2);
+            height:calc(46px /2);
+        }
+    }
+}
+section{
+    background: white;
+    height:calc(100vh - 57px);
+    overflow: hidden;
+    position: relative;
+    background: #EEEEEE;
+    >ul{
+        height:100vh;
+        background: white;
+        >li{
+         margin:0 10px;
+         height:calc(244px /2);
+         display:flex;
+            >img:nth-child(1){
+                width:calc(200px /2);
+                height:calc(200px /2);
+            }
+            >div:nth-child(2){
+                flex:1;
+                width:calc(400px /2);
+                height:calc(244px /2);
+                overflow:hidden;
+                border-bottom:1px solid #F1F1F1;  
+                display:flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                >p{
+                    margin-left:10px;
+                    color:#333333;
+                    font-size:13px;
+                    width:100%;
+                    overflow:hidden;
+                }
+                >p:nth-child(1){
+                    height:50px;
+                    overflow:hidden;
+                    letter-spacing: 1px;
+                }
+                >p:nth-child(2){
+                    white-space: nowrap;
+                }
+                >p:nth-child(3){
+                    white-space: nowrap;
+                    letter-spacing: 2px;
+                    >span{
+                        letter-spacing: 0px;
+                        color:#ffc64b;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收藏</title>
+		<link rel="stylesheet" type="text/css" href="../css/collect.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/collect.js"></script>
+	</head>
+	<body ng-controller="collect">
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>收藏</p><a href="javascript:;"><img src="../images/global/collect_01.jpg" alt="" /></a><a href="javascript:;"><img src="../images/global/collect_02.jpg" alt="" /></a>
+		</header>
+		<section class="cw-sec">
+			<ul>
+				<li ng-repeat="value in collects">
+					<img src="{{value.image}}" alt="" />
+					<div>
+						<p>{{value.title}}</p>
+						<p>距离:{{value.time}}km</p>
+						<p>价格:<span>{{value.price|currency:"￥"}}</span>/天</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

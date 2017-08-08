@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration: none;
+    font-family:"Microsoft YaHei";
+}
+html{
+    font-size:14px;
+    background: white;
+}
+header{
+    width:20rem;
+    height:calc(90px /2);
+    display:flex;
+    align-items: center;
+    font-size:18px;
+    color:#333333;
+    border-bottom:1px solid #e5e5e5;
+    position:relative;
+    background: white;
+    >a:nth-child(1){
+        display:block;
+        margin-left:10px;
+        z-index:10;
+        >img{
+            height:calc(28px /2);
+            width:calc(15px /2);
+        } 
+    }
+    >p:nth-child(2){
+        position:absolute;
+        width:20rem;
+        text-align:center;
+        z-index:1;
+    }
+}
+section{
+    >ul:nth-child(1){
+        margin:0 10px;
+        >li:nth-child(1){
+            >a{
+                display:flex;
+                justify-content: space-between;
+                >span:nth-child(1){
+                    flex:1;
+                }
+                >div:nth-child(2){
+                    width:calc(80px /2);
+                    height:calc(80px /2);
+                    border-radius: 50%;
+                    overflow:hidden;
+                    margin-right:15px;
+                    >img{
+                        width:calc(80px /2);
+                        height:calc(80px /2); 
+                    }
+                }
+            }
+        }
+        >li{
+            >a{
+                display:block;
+                height:calc(96px /2);
+                border-bottom:1px solid #E0E0E0;
+                display:flex;
+                align-items: center;
+                >span{
+                    color:#033333;
+                    font-size:14px;
+                }
+                >span:nth-child(2){
+                    flex:1;
+                    text-align:right;
+                    margin-right:15px;
+                }
+            }
+        }
+    }
+}

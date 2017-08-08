@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>缴纳押金</title>
+		<link rel="stylesheet" type="text/css" href="../css/surrender.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/surrender.js"></script>
+	</head>
+	<body ng-controller="surrender">
+		<header>
+			<a href="shop.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>缴纳押金</p>
+		</header>
+		<section class="cw-sec">
+			<div ng-repeat="value in surrender">
+				<div>
+					<div>需支付<span>{{value.money}}</span></div>
+					<p>{{value.msg}}</p>
+				</div>
+				<a href="javascript:;">
+					<span>选择付款方式</span><span><span>{{value.way}}</span><img src="{{value.image}}" alt="" /></span>
+				</a>
+				<a href="javascript:;">{{value.pay}}</a>
+			</div>
+		</section>
+	</body>
+</html>

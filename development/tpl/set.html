@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>设置</title>
+		<link rel="stylesheet" href="../css/set.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/set.js"></script>
+	</head>
+	<body ng-controller="set">
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>设置</p>
+		</header>
+		<section>
+			<ul>
+				<li ng-repeat="value in sets" ng-click="click($index)">
+					<a href="javascript:;">
+						<span>{{value.title}}</span>
+						<span class="cw-sp">
+							<img src="../images/global/set_02.jpg" alt="" />
+						<span>	
+						<span></span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li ng-repeat="value in sts" ng-click="arr($index)">
+					<a href="{{now}}">
+						<span>{{value.title}}</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body> 
+</html>

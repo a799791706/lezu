@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 14px;
+  background: #EEEEEE; }
+
+header {
+  width: 20rem;
+  height: calc(90px /2);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  background: white; }
+  header > a:nth-child(1) {
+    margin-left: 10px;
+    height: calc(46px /2);
+    z-index: 10; }
+    header > a:nth-child(1) > img {
+      width: calc(30px /2); }
+  header > p:nth-child(2) {
+    position: absolute;
+    width: 20rem;
+    text-align: center;
+    z-index: 1; }
+
+section {
+  margin-top: 11px;
+  background: white;
+  height: calc(100vh - 57px);
+  overflow: hidden;
+  position: relative;
+  background: #EEEEEE; }
+  section > div:nth-child(1) {
+    height: 100vh;
+    background: white; }
+    section > div:nth-child(1) > div:nth-child(1) {
+      height: calc(316px /2);
+      color: #999999;
+      text-align: center;
+      padding-top: 51px; }
+      section > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px; }
+        section > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) {
+          font-size: 18px;
+          color: #ffc64b; }
+      section > div:nth-child(1) > div:nth-child(1) > p:nth-child(2) {
+        font-size: 12px;
+        text-align: left;
+        margin: 0 10px;
+        margin-top: 51px;
+        height: 32px;
+        overflow: hidden; }
+    section > div:nth-child(1) > a:nth-child(2) {
+      height: calc(106px /2);
+      line-height: calc(106px /2);
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10px;
+      margin-top: 10px;
+      border-bottom: 1px solid #e5e5e5; }
+      section > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) {
+        color: #333333;
+        font-size: 13px; }
+      section > div:nth-child(1) > a:nth-child(2) > span:nth-child(2) {
+        display: flex;
+        align-items: center;
+        color: #999999;
+        font-size: 12px; }
+        section > div:nth-child(1) > a:nth-child(2) > span:nth-child(2) > img:nth-child(2) {
+          width: calc(14px /2);
+          height: calc(25px /2);
+          margin-left: 10px; }
+    section > div:nth-child(1) > a:nth-child(3) {
+      width: calc(500px /2);
+      height: calc(72px /2);
+      display: block;
+      margin: 85px auto;
+      font-size: 15px;
+      background: #333333;
+      border-radius: 3px;
+      color: white;
+      text-align: center;
+      line-height: calc(72px /2); }
+
+/*# sourceMappingURL=surrender.css.map */

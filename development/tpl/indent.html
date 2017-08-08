@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单</title>
+		<link rel="stylesheet" href="../css/indent.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/indent.js"></script>
+	</head>
+	<body ng-controller="indent">
+		<header>
+			<p>订单</p>
+		</header>
+		<section>
+			<div class="cw-tabs">
+				<ul class="cw-lit">
+					<li ng-repeat="value in tabs" class="{{news==$index ? 'on':''}}" ng-click="click($index)"><a href="">{{value.title}}</a></li>
+				</ul>
+			</div>
+			<div class="cw-is">
+				<div>
+					<ul ng-repeat="value in indents|filter:now">
+						<li><a href="{{arr2[$index]}}" ng-click="click($index)"><span>{{value.id}}</span><span>></span><span>{{value.status}}</span></a></li>
+						<li>
+							<div><img src="{{value.image}}" alt="" /></div>
+								<div>
+									<p>{{value.march}}</p>
+									<p><span>租期:</span>{{value.time}}</p>
+									<p><span>价格:</span>{{value.price}}元/天</p>							
+								</div>
+							<div><span>{{value.money|price}}</span></div>
+						</li>
+						<li><input type="button" value="申请退款"/><input type="button" value="提醒发货"/></li>
+					</ul>
+				</div>
+			</div>
+			
+		</section>
+		<footer>
+			<ul class="cw-uls">
+				<li><a href="homepage.html" class="cw-a">
+					<img src="../images/global/hot_01.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">乐租</p>
+				</a></li>
+				<li><a href="indent.html" class="cw-a">
+					<img src="../images/global/hot_02.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">订单</p>
+				</a></li>
+				<li><a href="mine.html" class="cw-a">
+					<img src="../images/global/hot_03.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">我</p>
+				</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

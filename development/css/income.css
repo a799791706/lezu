@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 14px; }
+
+header {
+  width: 20rem;
+  height: calc(90px /2);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  background: white;
+  border-bottom: 1px solid #EEEEEE; }
+  header > a:nth-child(1) {
+    margin-left: 10px;
+    height: calc(46px /2);
+    z-index: 10; }
+    header > a:nth-child(1) > img {
+      width: calc(30px /2); }
+  header > p:nth-child(2) {
+    position: absolute;
+    width: 20rem;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px; }
+
+section > div:nth-child(1) {
+  width: 20rem;
+  height: calc(378px /2);
+  background: linear-gradient(to bottom, #477899, #27A0DA); }
+  section > div:nth-child(1) > div:nth-child(1) {
+    height: 0;
+    overflow: hidden; }
+  section > div:nth-child(1) > div:nth-child(2) {
+    width: calc(144px /2);
+    height: calc(144px /2);
+    border-radius: 50%;
+    overflow: hidden;
+    background: green;
+    margin: 0 auto;
+    margin-top: 41px;
+    margin-bottom: 15px; }
+    section > div:nth-child(1) > div:nth-child(2) > img {
+      width: calc(144px /2);
+      height: calc(144px /2); }
+  section > div:nth-child(1) > p:nth-child(3) {
+    color: white;
+    font-size: 14px;
+    text-align: center; }
+section > div:nth-child(2) {
+  margin: 0 10px;
+  height: calc(58px /2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  section > div:nth-child(2) > a:nth-child(1) {
+    display: block; }
+    section > div:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+      width: calc(50px /2);
+      height: calc(34px /2);
+      float: left; }
+    section > div:nth-child(2) > a:nth-child(1) > span:nth-child(2) {
+      float: left;
+      font-size: 12px;
+      margin-left: 7px;
+      color: black; }
+  section > div:nth-child(2) > a:nth-child(2) {
+    color: blue;
+    font-size: 12px; }
+section > ul:nth-child(3) > li {
+  float: left; }
+  section > ul:nth-child(3) > li > a {
+    display: block;
+    width: calc(20rem /3);
+    height: calc(160px /2);
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    text-align: center; }
+    section > ul:nth-child(3) > li > a > p:nth-child(1) {
+      margin: 15px 0 10px 0; }
+    section > ul:nth-child(3) > li > a > p:nth-child(2) {
+      font-size: 12px;
+      color: black; }
+
+/*# sourceMappingURL=income.css.map */

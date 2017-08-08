@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/details.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+		<script src="../js/details.js"></script>
+	</head>
+	<body ng-controller="details">
+		<header>
+			<a href="indent.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>订单详情</p>
+		</header>
+		<section class="cw-scroll">
+			<div>
+				<div>
+					<div><img src="../images/global/details_01.jpg" alt="" /><div><p>待东家发货</p><span>您已付款，东家会尽快发货。</span></div></div>
+					<div>
+						<div><div></div><p>代付款</p></div>
+						<div></div>
+						<div><p>代付款</p><div></div></div>
+						<div class="cw-ty"></div>
+						<div class="cw-ty"><div></div><p>代付款</p></div>
+					</div>
+				</div>
+				<ul>
+					<li ng-repeat="value in details">
+						<p><span>{{value.mouse}}</span><span>共计{{value.days}}天</span></p>
+						<div>
+							<img src="{{value.image}}" alt="" />
+							<ul>
+								<li>{{value.title}}</li>
+								<li>价格：{{value.price|currency:"￥"}}/天</li>
+								<li>租期：{{value.time}}</li>
+								<li>日期：{{value.day}}/天</li>
+								<li>共计：<span>{{value.money|currency:"￥"}}元</span></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--提示语-->
+		<div class="cw-msg">
+			<p ng-repeat="value in msg">{{arr[$index]}}<span>{{value.title}}</span></p>
+		</div>
+		<!--提示语2-->
+		<div class="cw-status">
+			<p>提示消息已发送，请您耐心等候！</p>
+		</div>
+		<footer>
+			<ul class="cw-uls">
+				<li class="cw-btn"><a href="javascript:;">提醒发货</a></li>
+				<li class="cw-btn"><a href="javascript:;">申请退款</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

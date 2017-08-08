@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration: none;
+    font-family:"Microsoft YaHei";
+}
+html{
+    font-size:14px;
+    background: #F5F5F5;
+}
+header{ 
+    width:20rem;
+    height:100vh;
+    position:relative;
+    >img:nth-child(1){
+        width:100%;
+        height:100%;
+    }
+    >div:nth-child(2){
+        position:absolute;
+        bottom:0;
+        height:calc(98px /2);
+        >a{
+            display:block;
+            width:10rem;
+            height:calc(98px /2);
+            color:white;
+            background: #363636;
+            float:left;
+            border:none;
+            outline:none;
+            text-align:center;
+            line-height:calc(98px /2);
+        }
+        >a:hover{
+            background: #FFC64D;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title> 
+		<!--日历插件-->
+		<link rel="stylesheet" href="../css/libs/bootstrap.min.css" />
+	 	<link rel="stylesheet" href="../css/libs/jquery-ui.min.css" />
+		<!--主页面-->
+		<link rel="stylesheet" type="text/css" href="../css/libs/swiper.min.css"/>
+		<link rel="stylesheet" href="../css/homepage.css"/>
+		<!--日历插件-->
+		<script src="../js/libs/jquery-1.9.1.js"></script>
+	 	<script src="../js/libs/bootstrap.min.js"></script>
+	 	<script src="../js/libs/jquery-ui.min.js"></script>
+	 	<script src="../js/libs/jquery.ui.datepicker-zh-CN.js"></script>
+	 	<!--主页面-->
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/swiper.min.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/libs/iscroll-probe.js"></script>
+	 	<script src="../js/homepage.js"></script>
+	</head>
+	<body ng-controller="homepage">
+		<header>
+			<a href="nearby.html"><img src="../images/global/home page_02.jpg" alt="" /></a>
+			<div><a href="javascript:;" ng-click="click()"><img src="../images/global/home page_03.jpg" alt="" /></a><input type="text" placeholder="佳能相机" class="cw-inp"/></div>
+			<a href="news.html"><img src="../images/global/home page_01.jpg" alt="" /></a>
+			<!--栏目-->
+			<column class="cw-c">
+				<div>
+					<ul class="cw-ul">
+						<li ng-repeat="value in submenu"><a href="javascript:;" class="cw-oTar">{{value.title}}</a></li>
+					</ul>
+				<div>
+					<div></div>
+					<div>
+						<span><span>当前定位:</span><a href="javascript:;" id="cw-map">请选择地区</a></span>
+						<ul>
+							<li id="cw-sel">更换</li>
+							<li ng-repeat="value in map" class="cw-lis">{{value.toponymy}}</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<div class="cw-di"></div>
+			</column>
+		</header>
+		<!--banner-->
+		<div class="swiper-container cw-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" ng-repeat="value in images"><img src="{{value.image}}" alt="" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--日历-->
+		<div class="cw-rl">
+			<div>	
+				<div>
+					<div>
+						<input type="text" id="start">
+					</div>
+					<div>
+						<input type="text" id="end">
+					</div>
+				</div>
+				<div><span>您将租用</span><span>共<span>-</span>天</span></div>
+				<a href="javascript:;" class="cw-ready">确认租期</a>
+			</div>
+		</div>
+		<section>
+				<div> 
+					<div ng-repeat="value in contents">
+						<a href="javascript:;" class="cw-cop">
+							<p>{{value.tit}}</p>
+							<p>{{value.title}}</p>
+						</a>
+					</div>
+				</div>
+				<div class="cw-content">	
+					<!--lists-->
+					<div class="cw-list">
+						<a href="camera.html" ng-repeat="value in lists|filter:a">
+							<ul>
+								<li><img src="{{value.image}}" alt=""/></li>
+								<li><p>{{value.id}}</p><p>距离:{{value.juli}}</p></li> 
+								<li><span>{{value.money|currency:"￥"}}</span>/天</li>
+							</ul>
+						</a>
+					</div>
+					
+				</div>
+		</section>
+		<footer>
+			<ul class="cw-uls">
+				<li><a href="homepage.html" class="cw-a">
+					<img src="../images/global/hot_01.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">乐租</p>
+				</a></li>
+				<li><a href="indent.html" class="cw-a">
+					<img src="../images/global/hot_02.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">订单</p>
+				</a></li>
+				<li><a href="mine.html" class="cw-a">
+					<img src="../images/global/hot_03.jpg" alt="" class="cw-img"/>
+					<p class="cw-title">我</p>
+				</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

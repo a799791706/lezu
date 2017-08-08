@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 14px; }
+
+@font-face {
+  font-family: "font";
+  src: url(../ttf/IcoMoon-Free.ttf); }
+.icon {
+  font-family: "font"; }
+
+.icon-set:before {
+  content: "\e994";
+  color: white; }
+
+.icon-right:before {
+  content: "\ea42"; }
+
+header {
+  width: 20rem;
+  height: calc(370px /2);
+  position: relative;
+  background: url("../images/global/mine_01.jpg");
+  background-size: cover; }
+  header > a:nth-child(1) {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    line-height: 22px;
+    color: white;
+    top: 30px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1; }
+  header > div:nth-child(2) {
+    display: block;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: calc(130px /2);
+    left: 28px;
+    z-index: 2; }
+    header > div:nth-child(2) > a:nth-child(1) {
+      display: block;
+      overflow: hidden;
+      width: calc(146px /2);
+      height: calc(146px /2);
+      border-radius: 50%;
+      box-sizing: border-box;
+      overflow: hidden;
+      border: 4px solid white; }
+      header > div:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+        width: 100%; }
+    header > div:nth-child(2) > div:nth-child(2) > p:nth-child(1) {
+      margin-left: 6px; }
+      header > div:nth-child(2) > div:nth-child(2) > p:nth-child(1) > span:nth-child(1) {
+        width: 30px;
+        height: 20px;
+        display: block;
+        float: left;
+        overflow: hidden;
+        font-size: 15px;
+        color: white;
+        margin-right: 9px; }
+      header > div:nth-child(2) > div:nth-child(2) > p:nth-child(1) > span:nth-child(2) {
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+        font-size: 14px;
+        color: #fe5186;
+        transform: rotate(45deg); }
+    header > div:nth-child(2) > div:nth-child(2) > a:nth-child(2) {
+      width: 170px;
+      height: 30px;
+      display: inline-block;
+      overflow: hidden;
+      margin-left: 6px;
+      font-size: 13px;
+      color: white; }
+  header > a:nth-child(3) {
+    z-index: 3;
+    width: 20rem;
+    height: 36px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px; }
+
+section {
+  width: 20rem;
+  background: #F5F5F5; }
+  section > ul:nth-child(1) {
+    height: calc(174px /2);
+    display: flex;
+    justify-content: space-around;
+    background: white; }
+    section > ul:nth-child(1) li > a {
+      display: block;
+      overflow: hidden;
+      text-align: center; }
+      section > ul:nth-child(1) li > a > div:nth-child(1) {
+        width: 56px;
+        height: 40px; }
+        section > ul:nth-child(1) li > a > div:nth-child(1) > img:nth-child(1) {
+          margin-top: 9px;
+          width: 50%; }
+      section > ul:nth-child(1) li > a > p:nth-child(2) {
+        display: inline-block;
+        overflow: hidden;
+        margin: 12px 0 10px 0;
+        color: #3e3e3e;
+        font-size: 12px;
+        letter-spacing: 1px; }
+      section > ul:nth-child(1) li > a > div:nth-child(3) {
+        display: inline-block;
+        overflow: hidden;
+        height: 0;
+        overflow: hidden; }
+  section > ul:nth-child(2) {
+    width: 20rem;
+    margin: 0 auto;
+    background: white;
+    margin-top: 11px; }
+    section > ul:nth-child(2) > li > a:nth-child(1) {
+      padding: 0 10px;
+      height: calc(82px /2);
+      display: block;
+      display: flex;
+      align-items: center; }
+      section > ul:nth-child(2) > li > a:nth-child(1) > img:nth-child(1) {
+        width: calc(46px /2);
+        height: calc(46px /2);
+        margin-right: 24px; }
+      section > ul:nth-child(2) > li > a:nth-child(1) > span:nth-child(2) {
+        color: #333333;
+        font-size: 14px; }
+      section > ul:nth-child(2) > li > a:nth-child(1) > span:nth-child(3) {
+        flex: 1;
+        text-align: right;
+        color: #b3b3b3;
+        font-size: 14px;
+        margin-right: 15px; }
+      section > ul:nth-child(2) > li > a:nth-child(1) > img:nth-child(4) {
+        width: calc(14px /2);
+        height: calc(23px /2); }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white; }
+  footer > ul {
+    width: 20rem;
+    height: calc(100px /2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; }
+    footer > ul > li {
+      float: left;
+      width: calc(100% / 3); }
+      footer > ul > li > a {
+        display: block;
+        width: 100%;
+        height: calc(100px /2);
+        text-align: center; }
+        footer > ul > li > a > img {
+          margin-top: 5px;
+          width: calc(51px /2);
+          height: calc(48px /2); }
+        footer > ul > li > a > p {
+          font-size: 10px;
+          color: #999999;
+          margin-bottom: 0; }
+        footer > ul > li > a > p.on {
+          color: #333333; }
+
+/*# sourceMappingURL=mine.css.map */

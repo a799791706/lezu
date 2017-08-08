@@ -1,0 +1,163 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration: none;
+    font-family:"Microsoft YaHei";
+}
+html{
+    font-size:14px;
+    background: #EEEEEE;
+}
+header{
+    width:20rem;
+    height:calc(90px /2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:18px;
+    color:#333333;
+    border-bottom:1px solid #e5e5e5;
+    position:relative;
+    background: white;
+    >a:nth-child(1){
+        margin-left:10px;
+        height:calc(46px /2);
+        z-index:10;
+        >img{
+            width:calc(30px /2);
+        } 
+    }
+    >p:nth-child(2){
+        position:absolute;
+        width:20rem;
+        text-align:center;
+        z-index:1;
+    }
+    >a:nth-child(3){
+        display:block;
+        margin-right:10px;
+        overflow:hidden;
+        font-size:13px;
+        color:#333333;
+        text-align:right;
+        z-index: 10;
+    }
+}
+section{
+    margin-top:11px;
+    background: white;
+    height:calc(100vh - 57px);
+    overflow: hidden;
+    position: relative;
+    background: #EEEEEE;
+    >ul{
+        height:100vh;
+        background: #F2F2F2;
+        >li{
+            margin-bottom:10px;
+            height:calc(244px /2);
+            display:flex;
+            align-items: center;
+            background: white;
+            >a:nth-child(1){
+                margin-left:12px;
+                display:block;
+                z-index: 100;
+                width:20px;
+                height:20px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border:1px solid #FFDA8A;
+                display:none;
+            }
+            .on{
+                background: red;
+            }
+            >img:nth-child(2){
+                margin-left:10px;
+                width:calc(200px /2);
+                height:calc(200px /2);
+            }
+            >div:nth-child(3){
+                 margin-right:10px;
+                flex:1;
+                width:calc(400px /2);
+                height:calc(244px /2);
+                overflow:hidden;
+                border-bottom:1px solid #F1F1F1;  
+                display:flex;
+                flex-wrap: wrap;
+                >p{
+                    margin-left:10px;
+                    color:#999999;
+                    font-size:11px;
+                    width:100%;
+                    overflow:hidden;
+                }
+                >p:nth-child(1){
+                    margin-top:9px;
+                    color:#333333;
+                    font-size:13px;
+                    overflow:hidden;
+                    letter-spacing: 1px;
+                }
+                >p:nth-child(2){
+                    white-space: nowrap;
+                }
+                >p:nth-child(3){
+                    white-space: nowrap;
+                    >span{
+                        color:#ffc64b;
+                    }
+                }
+                >p:nth-child(5){
+                    white-space: nowrap;
+                    >span{
+                        font-size:13px;
+                        color:#ff4f4b;
+                        float:right;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    background: white;
+    >ul{
+        width:20rem;
+        height:calc(100px /2);
+        display:flex;
+        align-items: center;
+        >li{
+            float:left;
+            width:calc(100% / 3);
+            text-align:center;
+            >a{
+                display:block;
+                width:100%;
+                height:calc(100px /2);
+                text-align:center;
+                font-size:15px;
+                color:#333333;
+                line-height:50px;
+            }
+        }
+        >li:nth-child(2){
+            background: #ffc64b;
+            >a{
+                color:white;
+            }
+        }
+        >li:nth-child(3){
+            background: #ff4f4b;
+            >a{
+                color:white;
+            }
+        }
+    }
+}

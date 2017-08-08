@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>消息</title>
+		<link rel="stylesheet" href="../css/news.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/news.js"></script>
+	</head>
+	<body ng-controller="news">
+		<header>
+			<a href="homepage.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>消息</p>
+		</header>
+		<section>
+			<ul>
+				<li ng-repeat="value in news">
+					<a href="javascript:;">
+						<div><img src="{{value.image}}" alt="" /></div>
+						<div>
+							<p><span>{{value.content}}</span><span>{{value.time}}</span></p>
+							<p>{{value.title}}</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</body> 
+</html>

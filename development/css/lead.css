@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+.swiper-container {
+  width: 20rem;
+  height: 100vh;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 2.5px;
+  text-align: center; }
+  .swiper-container .swiper-slide > img {
+    width: calc(536px / 2);
+    margin-bottom: calc(81px / 4); }
+  .swiper-container .swiper-slide > p {
+    margin: calc(172px /2) 0 calc(166px /2) 0; }
+  .swiper-container .swiper-slide > button {
+    display: none; }
+  .swiper-container .swiper-slide:nth-child(2) > img {
+    width: calc(536px / 2); }
+  .swiper-container .swiper-slide:nth-child(3) > button {
+    display: block;
+    margin: 0 auto;
+    width: calc(250px /2);
+    height: calc(68px /2);
+    border-radius: 5px;
+    background: #333333;
+    text-align: center;
+    outline: none;
+    border: none; }
+    .swiper-container .swiper-slide:nth-child(3) > button > a {
+      font-size: 14.4px;
+      letter-spacing: 2px;
+      color: white; }
+  .swiper-container .swiper-pagination {
+    bottom: 32px; }
+    .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+      background: #ffc64b; }
+
+/*# sourceMappingURL=lead.css.map */

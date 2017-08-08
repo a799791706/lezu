@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人信息</title>
+		<link rel="stylesheet" href="../css/message.css"/>
+		<script src="../js/topo.js"></script>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/message.js"></script>
+	</head>
+	<body ng-controller="message">
+		<header>
+			<a href="mine.html"><img src="../images/global/message_01.jpg" alt="" /></a><p>个人信息</p>
+		</header>
+		<section>
+			<ul>
+				<li><a href="javascript:;"><span>头像</span><div><img src="../images/global/message_02.jpg" alt="" /></div><img src="../images/global/activate_01.jpg" alt="" /></a></li>
+				<li ng-repeat="value in lists"><a href="javascript:;"><span>{{value.title}}</span><span>{{value.minute}}</span><img src="../images/global/activate_01.jpg" alt="" /></a></li>
+			</ul>
+		</section>
+	</body> 
+</html>

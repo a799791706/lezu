@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="atr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的收入</title>
+		<link rel="stylesheet" type="text/css" href="../css/income.css"/>
+		<script src="../js/libs/angular.min.js"></script>
+		<script src="../js/topo.js"></script>
+		<script src="../js/income.js"></script>
+	</head>
+	<body ng-controller="income"> 
+		<header>
+			<a href="mine.html"><img src="../images/global/rent-out_01.jpg" alt="" /></a><p>我的收入</p>
+		</header>
+		<section class="cw-sec">
+			<div>
+				<div></div>
+				<div><img src="../images/global/mine_02.jpg" alt="" /></div>
+				<p>破婆婆</p>
+			</div>
+			<div><a href="javascript:;"><img src="../images/global/income_01.jpg" alt="" /><span>收入</span></a><a href="javascript:;">提现</a></div>
+			<ul>
+				<li ng-repeat="value in tits"><a href="javascropt:;"><p>{{value.data}}</p><p>{{value.history}}</p></a></li>
+			</ul>
+		</section>
+	</body>
+</html>
